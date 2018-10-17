@@ -1,0 +1,102 @@
+:root {
+    font-size: 16px;
+    --h1-size: calc(1rem + 2.5vmax);
+    --h2-size: calc(1rem + 2.2vmax);
+    --display-size: calc(1rem + 2.2vmax);
+    --button-size: calc(1rem + 0.5max);
+    color: #F4FFFD;
+}
+
+body {
+    background-color: #003E1F;
+}
+
+header {
+    margin-top: -1vh;
+    text-align: center;
+    font-family: cursive;
+}
+
+header > h1 {
+    font-size: var(--h1-size);
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+    from {
+        right: 50vw;
+    }
+    to {
+        right: 0vw;
+    }
+}
+
+header > h2 {
+    font-size: var(--h2-size);
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 0.4s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bounce {
+    50% {
+        color: yellow;
+        transform: rotate(180deg) scale(2);
+    }
+    100% {
+        color: #F4FFFD;
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+main {
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+}
+/*  add title transitions, add media queries for anything smaller than an ipad */
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 3vmax;
+    margin: auto;
+    width: 75vw;
+    box-shadow: 3vmax 3vmax 3vw #292526;
+    background-color: #F4FFFD;
+}
+
+#display {
+    grid-area: 1 / 1 / 3 / 5;
+    text-align: center;
+    display: flex;
+    font-size: var(--display-size);
+    background: linear-gradient(#232526, #414345);
+}
+
+#display > p {
+    margin: auto;
+}
+
+.button {
+    padding: 1vmax;
+    margin: 0.5vmax;
+    font-size: var(--button-size);
+    font-family: 'charmonman', cursive;
+    color: #F4FFFD;
+    border-radius: 1em;
+    background: linear-gradient(#232526, #414345);
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
