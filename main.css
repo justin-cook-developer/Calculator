@@ -3,7 +3,7 @@
     --h1-size: calc(1rem + 2.5vmax);
     --h2-size: calc(1rem + 2.2vmax);
     --display-size: calc(1rem + 2.2vmax);
-    --button-size: calc(1rem + 0.5max);
+    --button-size: calc(1rem + 1vmax);
     color: #F4FFFD;
 }
 
@@ -40,7 +40,7 @@ header > h1 {
 header > h2 {
     font-size: var(--h2-size);
     position: relative;
-    animation-name: bounce;
+    animation-name: spin;
     animation-duration: 0.4s;
     animation-delay: 1s;
     animation-iteration-count: 2;
@@ -48,7 +48,7 @@ header > h2 {
     animation-fill-mode: forwards;
 }
 
-@keyframes bounce {
+@keyframes spin {
     50% {
         color: yellow;
         transform: rotate(180deg) scale(2);
