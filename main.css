@@ -3,7 +3,7 @@
     --h1-size: calc(1rem + 2.5vmax);
     --h2-size: calc(1rem + 2.2vmax);
     --display-size: calc(1rem + 2.2vmax);
-    --button-size: calc(1rem + 1vmax);
+    --button-size: calc(1rem + 1.5vmax);
     color: #F4FFFD;
 }
 
