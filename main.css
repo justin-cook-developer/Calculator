@@ -112,3 +112,15 @@ main {
         color: #F4FFFD;
         }
 }
+
+@media screen and (max-width: 424px) {
+    :root {
+        --button-size: calc(1rem + 3vmax);
+    }
+    #calculator {
+        grid-gap: 0.5vmax;
+    }
+    .button {
+        margin: 0;
+    }
+}
