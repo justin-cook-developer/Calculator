@@ -100,3 +100,15 @@ main {
 .button:hover {
     transform: scale(1.2);
 }
+
+/* add media queries down here */
+@media screen and (min-width: 769px) {
+    :root {
+        font-size: 16px;
+        --h1-size: calc(1rem + 2vmax);
+        --h2-size: calc(1rem + 1.7vmax);
+        --display-size: calc(1rem + 1.7vmax);
+        --button-size: calc(1rem + .5vmax);
+        color: #F4FFFD;
+        }
+}
