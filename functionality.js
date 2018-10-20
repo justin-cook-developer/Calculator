@@ -38,8 +38,8 @@ class Computation {
 
   // will be used in attemptToCompute if calculation is possible
   compute() {
-    const left = parseInt(this.leftOperand, 10);
-    const right = parseInt(this.rightOperand, 10);
+    const left = parseFloat(this.leftOperand, 10);
+    const right = parseFloat(this.rightOperand, 10);
 
     if (this.operator === '+') {
       return left + right;
